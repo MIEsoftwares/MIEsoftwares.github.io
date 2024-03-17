@@ -1,0 +1,183 @@
+
+header{
+    background-color: #1F2C56;
+}
+
+#logo{
+    width: 110px;
+    height: auto;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+#empresa-e-produtos{
+    margin: 0 8vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#visita-e-time{
+    margin: 2vh 8vw 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#visita{
+    width: 50%;
+    text-align: center;
+    background-color: gold;
+}
+
+#visita iframe{
+    width: 27vw;
+    height: 30vh;
+}
+
+#time{
+    width: 50%;
+    text-align: center;
+    background-color: red;
+}
+
+#parallax{
+    width: auto;
+    height: 100vh;
+    background-color: black;
+    background: url(../images/fundo-gradiente.jpg) repeat-x top center;
+    background-size: contain;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nossa-empresa{
+    padding: 0 3vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+}
+
+#nossa-empresa h2{
+    margin-bottom: 2vh;
+}
+
+#nossa-empresa p{
+    width: 27vw;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.5em;
+}
+
+#produtos{
+    width: 50%;
+    background-color: blue;
+}
+
+#produtos h2{
+    margin-bottom: 2vh;
+}
+
+#card-produtos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#v-bar{
+    margin-top:10vh;
+    width: 3px;
+    height: 400px;
+    background-color: #ccc;
+}
+
+#text-parallax{
+    padding: 0 40vw 0 5vw;
+    text-align: justify;
+    text-indent: 30px;
+    font-weight: bold;
+    font-size: 1.5em
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-ident{
+    text-indent: 30px;
+}
+
+@media (max-width: 991px){
+    #parallax{
+        background-size: inherit;
+        height: 100vh;
+    }
+
+    #text-parallax{
+        text-align: justify;
+        padding: 0 50px 0 50px;
+        font-weight: bold;
+        text-indent: 35px;
+        margin-bottom: 40vh;
+        margin-top: 5vh;
+        font-size: 1em;
+    }
+
+    #empresa-e-produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #v-bar{
+        display: none;
+    }
+
+    #nossa-empresa{
+        margin: 2vh 0;
+        width: calc(100% - 5vh);
+    }
+
+    #produtos{
+        margin: 2vh 0;
+        width: calc(100% - 5vh);
+    }
+
+    #visita{
+        margin: 2vh 0;
+        width: calc(100% - 5vh);
+    }
+
+    #visita iframe{
+        width: 60vw;
+        height: 50vh;
+    }
+
+    #time{
+        margin: 2vh 0;
+        width: calc(100% - 5vh);
+    }
+
+    #nossa-empresa p{
+        width: 100%;
+        padding: 0 1.5vh;
+    }
+
+    #visita-e-time{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #card-produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+}
