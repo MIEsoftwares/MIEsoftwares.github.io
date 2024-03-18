@@ -28,7 +28,6 @@ header{
 #visita{
     width: 50%;
     text-align: center;
-    background-color: gold;
 }
 
 #visita iframe{
@@ -39,7 +38,6 @@ header{
 #time{
     width: 50%;
     text-align: center;
-    background-color: red;
 }
 
 #parallax{
@@ -57,10 +55,10 @@ header{
 #nossa-empresa{
     padding: 0 3vw;
     width: 50%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: green;
 }
 
 #nossa-empresa h2{
@@ -76,7 +74,6 @@ header{
 
 #produtos{
     width: 50%;
-    background-color: blue;
 }
 
 #produtos h2{
@@ -86,7 +83,7 @@ header{
 #card-produtos{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 1.5vw;
 }
 
 #v-bar{
@@ -110,6 +107,23 @@ header{
 
 .text-ident{
     text-indent: 30px;
+}
+
+#rodape{
+    background-color: #1F2C56;
+    box-sizing: border-box;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rodape #redes{
+    gap: 1.5vw;
+}
+
+#rodape #redes img{
+    width: 48px;
 }
 
 @media (max-width: 991px){
@@ -172,6 +186,7 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
 
     #card-produtos{
@@ -179,5 +194,17 @@ header{
         flex-direction: column;
         align-items: center;
         gap: 2vh;
+    }
+
+    #time{
+        width: 100%;
+    }
+
+    #rodape{
+        font-size: 0.7em;
+    }
+
+    #rodape #redes img{
+        width: 24px;
     }
 }
